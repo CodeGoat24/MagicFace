@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MagicFace</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!--  support TeX in .html file  -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  <!--  support TeX in .html file  -->
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MagicFace: Training-free Universal-Style Human Image Customized Synthesis</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://codegoat24.github.io/"><b>Yibin Wang</b></a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://weizhonz.github.io/"><b>Weizhong Zhang</b></a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://cjinfdu.github.io/"><b>Cheng Jin</b></a><sup>†</sup>,
+            </span>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup></sup>School of Computer Science, Fudan University, China</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>School of Data Science, Fudan University, China</span>
+        </div>
+          <span class=""><sup>*</sup>Equal Contribution</span>
+          <span class=""><sup>†</sup>Corrsponding Author</span>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CodeGoat24/MagicFace"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Begin Teaser -->
+<div>
+  <div class="columns is-centered has-text-centered">
+    <h2 class="title is-3">Universal-Style Human Customization</h2>
+  </div>
+  </br>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div> 
+        <img src="./static/images/teaser.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/>
+        
+        <!-- <img src="./static/images/results_of_single_concept.png"
+        class="interpolation-image"
+        alt="Interpolate start reference image."/> -->
+        </div>
+      <div class="hero-body">
+        <h2 class="subtitle has-text-justified">
+          <p class="has-text-centered">MagicFace is capable of generating high-fidelity images depicting the specific individual in any style with multiple given concepts in a training-free manner.</p>
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Teaser -->
+
+
+<!-- Begin abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <!-- <img src='static/images/method_overview.png' id="framework"><br><br> -->
+        <div class="content has-text-justified">
+          <p>
+            Existing human image personalized generation methods often require tedious training: either fine-tuning with a few images or retraining on large-scale datasets. 
+            In such cases, these methods are prone to overfitting and encounter difficulties when personalizing individuals of diverse styles. Moreover, these training-based approaches also struggle with multi-concept human image customizing. To this end, we propose MagicFace, the first method for universal-style human image personalized synthesis that enables single/multi-concept customization for humans of any style in a training-free manner. MagicFace introduces a coarse-to-fine generation pipeline, involving two sequential stages: semantic scene construction and concept feature injection. This is achieved by our Reference-aware Self-Attention (RSA) and Region-grouped Blend Attention (RBA) mechanisms. Specifically, 
+            in the first stage, RSA enables the latent image to query features from reference concepts simultaneously, extracting the coarse-grained overall semantic understanding to facilitate the initial semantic layout establishment. 
+            In the second stage, we employ a training-free semantic segmentation method to pinpoint the generated regions of all concepts in the latent image at each step. Following this, RBA divides the pixels of the latent image into semantic groups, with each group querying fine-grained features from its reference concept, which ensures precise attribute alignment and feature injection. Throughout the two-stage process, a weight mask strategy is employed to ensure the model focuses more on the reference concepts. 
+            Extensive experiments demonstrate our superiority in both human-centric subject-to-image synthesis and multi-concept human image customization. Our approach also can be applied to texture transformation, further enhancing its versatility and applicability.            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End abstract -->
+
+
+<!-- Begin method overview -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <img src='static/images/architecture.png' id="framework"><br>
+        <div class="content has-text-justified">
+          <p>
+            Given reference images, their segmentation masks, and text prompts, we generate personalized image <b>z</b><SUB>0</SUB> aligned to the target prompt $P$. The sampling pipeline consists of two paths: (a) the reference path and (b) the customization path. In (a), we first employ a diffusion forward process on the input images. Then, the noised reference latents are input into vanilla SD U-Net. In (b), we first sample a Gaussian noise <b>z</b><SUB>T</SUB> and introduce coarse-to-fine denoising processes involving two stages: semantic layout construction and concept feature injection. At each step t, we pass current latent <b>z</b><SUB>t</SUB> to our modified U-Net: (1) in the first stage, we employ RSA to integrate the features from the reference path to facilitate the initial semantic scene construction; (2) in the second stage, we first obtain the latent semantic map of <b>z</b><SUB>t</SUB> via attention-based segmentation method. Based on this, RBA divides the latent image and ensures fine-grained feature injection for each generated concept. A weighted mask strategy is adopted to ensure the generator focuses more on given concepts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
+
+<!-- Begin Qualitative Comparison -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Comparisons</h2>
+        <img src='static/images/subject_to_image_comparison.png' id="framework">
+        <div class="content has-text-centered">
+          <p>
+            <b>Comparisons of human-centric subject-to-image generation.</b>
+          </p>
+        </div>
+        <img src='static/images/multi_concept_generation.png' id="framework">
+        <div class="content has-text-centered">
+          <p>
+            <b>Comparisons of multi-concept human customization.</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Qualitative Comparison -->
+
+
+<!-- Begin More Visual Results. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">More Visual Results</h2>
+        <img src='static/images/visual_result_photorealism.png' id="framework">
+        <div class="content has-text-centered">
+          <p>
+            <b>Human customization in photorealism style.</b>
+          </p>
+        </div>
+        <img src='static/images/visual_result_diverse_style.png' id="framework">
+        <div class="content has-text-centered">
+          <p>
+            <b>Human customization in diverse styles.</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End More Visual Results. -->
+
+
+<!-- Begin Appearance Transfer. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Texture Transfer</h2>
+        <img src='static/images/texture_transfer.png' id="framework">
+        <div class="content has-text-centered">
+          <p>
+            MagicFace is also highly effective for texture transfer. By precisely injecting features from input images, our method seamlessly integrates these appearances into generated objects, showcasing its versatility and effectiveness in diverse applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Appearance Transfer. -->
+
+
+<!-- Begin Empower other methods. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Attention Visualization </h2>
+        <img src='static/images/visualization.png' id="framework">
+        <div class="content has-text-centered">
+          <p>
+            <b>Correspondence maps and region-grouped attention maps visualization.</b> 
+          </p>
+        </div>
+          <p>
+            In (a), features with the highest similarity between the generated subject and the reference concepts are marked with the same color. (b) the results of features in colored boxes querying their reference concept keys.
+          </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Empower other methods. -->
+<br><br>
+<!-- End More Visual Results.-->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="content has-text-centered">
+        <div class="content">
+          <p>
+            This website was modified from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+ 
