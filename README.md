@@ -32,6 +32,7 @@ Extensive experiments demonstrate our superiority in both human-centric subject-
 - [ ] Release demo
 - [ ] Release evaluation datasets
 - [ ] Release evaluation code
+- [ ] Release visualization code
 
 ## 🖼️ Visual results of MagicFace
 ![teaser](figures/visual_result_photorealism.png)
