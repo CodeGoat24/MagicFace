@@ -25,7 +25,7 @@ In the second stage, we employ a training-free semantic segmentation method to p
 Extensive experiments demonstrate our superiority in both human-centric subject-to-image synthesis and multi-concept human image customization. Our approach also can be applied to texture transformation, further enhancing its versatility and applicability.
 </p>
 
-![teaser](docs/static/images/architecture.png)
+![teaser](figures/architecture.png)
 
 ## 🗓️ TODO
 - [ ] Release inference code
