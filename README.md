@@ -8,7 +8,7 @@
 
 [Fudan University]
 
-<a href="">
+<a href="https://arxiv.org/pdf/2408.07433">
 <img src='https://img.shields.io/badge/arxiv-MagicFace-blue' alt='Paper PDF'></a>
 <a href="https://codegoat24.github.io/MagicFace/">
 <img src='https://img.shields.io/badge/Project-Website-orange' alt='Project Page'></a>
