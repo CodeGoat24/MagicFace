@@ -15,7 +15,7 @@
 
 </div>
 
-![teaser](figures/teaser.png)
+![teaser](docs/static/images/teaser.png)
 
 ## 📖 Abstract
 
@@ -27,7 +27,7 @@ In the second stage, we employ a training-free semantic segmentation method to p
 Extensive experiments demonstrate our superiority in both human-centric subject-to-image synthesis and multi-concept human image customization. Our approach also can be applied to texture transformation, further enhancing its versatility and applicability.
 </p>
 
-![teaser](figures/architecture.png)
+![architecture](docs/static/images/architecture.png)
 
 ## 🗓️ TODO
 - [ ] Release inference code
@@ -37,6 +37,6 @@ Extensive experiments demonstrate our superiority in both human-centric subject-
 - [ ] Release visualization code
 
 ## 🖼️ Visual results of MagicFace
-![teaser](figures/visual_result_photorealism.png)
+![visual_result](figures/visual_result_photorealism.png)
 
-![teaser](figures/visual_result_diverse_style.png)
+![visual_result](figures/visual_result_diverse_style.png)
