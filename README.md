@@ -15,8 +15,10 @@
 
 </div>
 
-## 📖 Abstract
 ![teaser](figures/teaser.png)
+
+## 📖 Abstract
+
 <p>
 Existing human image personalized generation methods often require tedious training: either fine-tuning with a few images or retraining on large-scale datasets. 
 In such cases, these methods are prone to overfitting and encounter difficulties when personalizing individuals of diverse styles. Moreover, these training-based approaches also struggle with multi-concept human image customizing. To this end, we propose MagicFace, the first method for universal-style human image personalized synthesis that enables single/multi-concept customization for humans of any style in a training-free manner. MagicFace introduces a coarse-to-fine generation pipeline, involving two sequential stages: semantic scene construction and concept feature injection. This is achieved by our Reference-aware Self-Attention (RSA) and Region-grouped Blend Attention (RBA) mechanisms. Specifically, 
