@@ -17,6 +17,11 @@
 
 ![teaser](docs/static/images/teaser.png)
 
+## Release
+- [2024/08/18] 🔥 We update the figures and include inference time comparisons in the latest version of the paper, which will be available on arXiv soon.
+- [2024/08/15] 🔥 We release the [paper](https://arxiv.org/pdf/2408.07433).
+- [2024/08/14] 🔥 We launch the [project page](https://codegoat24.github.io/MagicFace/).
+
 ## 📖 Abstract
 
 <p>
