@@ -44,6 +44,6 @@ Extensive experiments demonstrate the superiority of MagicFace in both human-cen
 - [ ] Release visualization code
 
 ## 🖼️ Visual results of MagicFace
-![visual_result](figures/visual_result_photorealism.png)
+![visual_result](docs/static/images/visual_result_photorealism.png)
 
-![visual_result](figures/visual_result_diverse_style.png)
+![visual_result](docs/static/images/visual_result_diverse_style.png)
