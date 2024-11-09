@@ -152,14 +152,15 @@
         <!-- <img src='static/images/method_overview.png' id="framework"><br><br> -->
         <div class="content has-text-justified">
           <p>
-            Current state-of-the-art methods for human image customized synthesis typically require tedious training on large-scale datasets. 
-In such cases, they are prone to overfitting and struggle to personalize individuals of unseen styles.
-Moreover, these methods extensively focus on single-concept human image synthesis and lack the flexibility needed for customizing individuals with multiple given concepts, thereby impeding their broader practical application.
-To this end, we propose MagicFace, a novel training-free method for universal-style human image personalized synthesis, enabling multi-concept customization by accurately integrating reference concept features into their latent generated region at the pixel level. 
-Specifically, MagicFace introduces a coarse-to-fine generation pipeline, involving two sequential stages: semantic layout construction and concept feature injection. This is achieved by our Reference-aware Self-Attention (RSA) and Region-grouped Blend Attention (RBA) mechanisms.  
+            Current human image customization methods leverage Stable Diffusion (SD) for its rich semantic prior. 
+However, since SD is not specifically designed for human-oriented generation, these methods often require extensive fine-tuning on large-scale datasets, which renders them susceptible to overfitting and hinders their ability to personalize individuals with previously unseen styles.
+Moreover, these methods extensively focus on single-concept human image synthesis and lack the flexibility to customize individuals using multiple given concepts, thereby impeding their broader practical application.
+This paper proposes MagicFace, a novel training-free method for multi-concept universal-style human image personalized synthesis. 
+Our core idea is to simulate how humans create images given specific concepts, i.e., first establish a semantic layout considering factors such as concepts' shape and posture, then optimize details by comparing with concepts at the pixel level. To implement this process, we introduce a coarse-to-fine generation pipeline, involving two sequential stages: semantic layout construction and concept feature injection. This is achieved by our Reference-aware Self-Attention (RSA) and Region-grouped Blend Attention (RBA) mechanisms.  
 In the first stage, RSA enables the latent image to query features from all reference concepts simultaneously, extracting the overall semantic understanding to facilitate the initial semantic layout establishment. 
-In the second stage, we employ an attention-based semantic segmentation method to pinpoint the latent generated regions of all concepts at each step. Following this, RBA divides the pixels of the latent image into semantic groups, with each group querying fine-grained features from the corresponding reference concept, which ensures precise attribute alignment and feature injection. Throughout the generation process, a weighted mask strategy is employed to ensure the model focuses more on the reference concepts. 
-Extensive experiments demonstrate the superiority of MagicFace in both human-centric subject-to-image synthesis and multi-concept human image customization. It also can be applied to texture transfer, further enhancing its versatility and applicability.
+In the second stage, we employ an attention-based semantic segmentation method to pinpoint the latent generated regions of all concepts at each step. Following this, RBA divides the pixels of the latent image into semantic groups, with each group querying fine-grained features from the corresponding reference concept.
+Notably, our method empowers users to freely control the influence of each concept on customization through a weighted mask strategy.
+Extensive experiments demonstrate the superiority of MagicFace in both single- and multi-concept human image customization. 
           </p>
         </div>
       </div>
