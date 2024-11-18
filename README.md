@@ -4,7 +4,7 @@
 
 [Yibin Wang](https://codegoat24.github.io), [Weizhong Zhang](https://weizhonz.github.io/)&#8224;, [Cheng Jin](https://cjinfdu.github.io/)&#8224; 
 
-(*equal contribution, &#8224;corresponding author)
+(&#8224;corresponding author)
 
 [Fudan University]
 
@@ -18,7 +18,7 @@
 ![teaser](docs/static/images/teaser.png)
 
 ## Release
-- [2024/08/20] 🔥 We update the figures and include inference time comparisons in the [paper](https://arxiv.org/pdf/2408.07433).
+- [2024/11/18] 🔥 We update the figures and include inference time comparisons in the [paper](https://arxiv.org/pdf/2408.07433).
 - [2024/08/15] 🔥 We release the [paper](https://arxiv.org/pdf/2408.07433).
 - [2024/08/14] 🔥 We launch the [project page](https://codegoat24.github.io/MagicFace/).
 
