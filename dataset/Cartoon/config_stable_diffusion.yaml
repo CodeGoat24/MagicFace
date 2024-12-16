@@ -1,0 +1,35 @@
+mark: ""
+
+model_path: "stabilityai/stable-diffusion-2-1"
+
+gpu: 2
+
+# feature injection setting
+start_step: 0
+inject_step: 20
+end_step: 50
+layer_idx: [10,11,12,13,14,15]
+
+
+# set seeds
+seeds: [214128]
+
+# set reference image infos
+ref_image_infos: {
+  dataset/Cartoon/image/girl.jpg: a cartoon girl,
+  dataset/Cartoon/image/hat.jpg: a cartoon boy wearing a hat
+  }
+
+target_prompt: "a cartoon girl wearing a hat"
+
+ref_index: [3,6]
+
+# weaken the irrelevant token‘s attention during semantic segmentation. 
+# 0.9 is advised for single-concept generation, while 0.6 is better suited for multi-concept generation
+ca_scale: 0.6 
+
+# ref image setting
+use_null_ref_prompts: False     # Whether or not to use an empty prompt when denoising reference images.
+mask_weights: [1.2, 2.0]   # The larger the mask_weight is, the higher attention is for the reference image.
+
+negative_prompt: "lowres, bad anatomy, text, error, cropped, worst quality, low quality, normal quality, jpeg artifacts, blurry, freak, disharmony, ugly, horrible, disabled body, naked"
