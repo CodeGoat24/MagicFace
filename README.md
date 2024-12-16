@@ -105,4 +105,4 @@ If you have any comments or questions, please open a new issue or feel free to c
 ![visual_result](docs/static/images/visual_result_diverse_style.png)
 
 # 🙏 Acknowledgements
-We thank to [Stable Diffusion](https://github.com/CompVis/stable-diffusion), [MasaCtrl](https://github.com/TencentARC/MasaCtrl), [Grounded-Segment-Anything](https://github.com/IDEA-Research/Grounded-Segment-Anything).
+We thank to [Stable Diffusion](https://github.com/CompVis/stable-diffusion), [MasaCtrl](https://github.com/TencentARC/MasaCtrl) and [Grounded-Segment-Anything](https://github.com/IDEA-Research/Grounded-Segment-Anything).
