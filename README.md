@@ -17,10 +17,10 @@
 
 ![teaser](docs/static/images/teaser.png)
 
-## Release
+## 🔥 Release
 - [2024/12/16] 🔥🔥 We release the test **demo** for you to reproduce the results in our [paper](https://arxiv.org/pdf/2408.07433) !!
 - [2024/12/16] 🔥🔥 We release the **inference** and **visualization** code !!
-- [2024/11/18] 🔥 We update the figures and include inference time comparisons in the [paper](https://arxiv.org/pdf/2408.07433).
+- [2024/11/18] 🔥 We update the figures and include inference time comparisons in [paper](https://arxiv.org/pdf/2408.07433).
 - [2024/08/15] 🔥 We release the [paper](https://arxiv.org/pdf/2408.07433).
 - [2024/08/14] 🔥 We launch the [project page](https://codegoat24.github.io/MagicFace/).
 
