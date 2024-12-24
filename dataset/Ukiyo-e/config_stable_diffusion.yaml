@@ -1,6 +1,6 @@
 mark: ""
 
-model_path: "stabilityai/stable-diffusion-2-1"
+model_path: "stabilityai/stable-diffusion-2-1-base"
 
 gpu: 2
 
