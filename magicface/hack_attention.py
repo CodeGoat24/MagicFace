@@ -136,7 +136,7 @@ class AttentionStore(AttentionControl):
         return {"r2_cross": [],"r4_cross": [], "r8_cross": [], "r16_cross": [],
                 "r2_self": [], "r4_self": [], "r8_self": [], "r16_self": []}
 
-    def forward(self, attn, is_cross: bool, place_in_unet: str):  ####TODO 修改key名称
+    def forward(self, attn, is_cross: bool, place_in_unet: str):
         key = f"{place_in_unet}_{'cross' if is_cross else 'self'}"
         h = int(attn.size(1)**(0.5))
         r = int(self.H/h)
